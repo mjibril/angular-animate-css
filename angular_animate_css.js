@@ -7,7 +7,7 @@ angular.module('animatecss.directive',[])
 		var delay= attr.animateCssDuration || null;
 		var css_class= attr.animateCss || 'flash';
 		var event= attr.animateCssEvent || null;
-		var prevent_default= attr.animateCssPrevent || true;
+		var prevent_default= attr.animateCssPrevent || "true";
 		if(!event){
 		    
 		    $timeout(function(){
@@ -18,7 +18,7 @@ angular.module('animatecss.directive',[])
 		else
 		{
 		    element.on(event, function(event) {
-			if(prevent_default)
+			if(prevent_default == "true" )
 			{
 			    event.preventDefault();
 			}
