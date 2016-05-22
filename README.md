@@ -38,7 +38,7 @@ Using *animate-css-event* in the example will create a click listener for the bu
 The animation class is removed after *animate-css-duration* (in *ms*).
 *animate-css-prevent* is used to stop the event from propagating.
 ## Defaults
-*  *animate-css* defaults to *flash*
+*  *animate-css* defaults to *flash* ( this attribute must be provided even if no value is present)
 *  *animate-css-delay* defaults to *800ms*
 *  *animate-css-duration* is not activated when no value is given.
 *  *animate-css-event* is not activated when no value is given.
