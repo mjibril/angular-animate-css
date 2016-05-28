@@ -4,7 +4,7 @@ angular.module('animatecss.directive',[])
 
 	    link: function(scope, element, attr) {
 		var delay= attr.animateCssDelay || 800;
-		var delay= attr.animateCssDuration || null;
+		var duration= attr.animateCssDuration || null;
 		var css_class= attr.animateCss || 'flash';
 		var event= attr.animateCssEvent || null;
 		var prevent_default= attr.animateCssPrevent || "true";
